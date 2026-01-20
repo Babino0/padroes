@@ -1,14 +1,11 @@
 package dio_project.padroes.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "endereco")
 public class Endereco {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String cep;
     private String logradouro;
     private String complemento;

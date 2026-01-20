@@ -30,7 +30,7 @@ public class ClienteController {
         return ResponseEntity.ok(cliente);
     }@PutMapping("/{id}")
     public ResponseEntity<Cliente> inserir(@PathVariable("id") Long id, @RequestBody Cliente cliente){
-        clienteService.Atualizar(id);
+        clienteService.atualizar(id, cliente);
         return ResponseEntity.ok(cliente);
     }
 
