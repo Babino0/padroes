@@ -1,4 +1,4 @@
-package dio_project.padroes.controller;
+package dio_project.padroes.model;
 
 
 public class Endereco {
